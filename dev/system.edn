@@ -1,0 +1,193 @@
+{:vocab {:sc/create-fn net.wikipunk.rdf/map->UniversalTranslator
+         :sc/refs      [:obo]}
+ :obo   {:sc/create-fn net.wikipunk.obo/map->OBO
+         :boot         [;; net.wikipunk.obo.boot/ado
+                        ;; net.wikipunk.obo.boot/aeo
+                        ;; net.wikipunk.obo.boot/agro
+                        ;; net.wikipunk.obo.boot/aism
+                        ;; net.wikipunk.obo.boot/amphx
+                        ;; net.wikipunk.obo.boot/apo
+                        ;; net.wikipunk.obo.boot/apollo_sv
+                        ;; net.wikipunk.obo.boot/aro
+                        ;; net.wikipunk.obo.boot/bco
+                        ;; net.wikipunk.obo.boot/bfo
+                        ;; net.wikipunk.obo.boot/bspo
+                        ;; net.wikipunk.obo.boot/bto
+                        ;; net.wikipunk.obo.boot/caro
+                        ;; net.wikipunk.obo.boot/cdao
+                        ;; net.wikipunk.obo.boot/cdno
+                        ;; net.wikipunk.obo.boot/chebi
+                        ;; net.wikipunk.obo.boot/cheminf
+                        ;; net.wikipunk.obo.boot/chiro
+                        ;; net.wikipunk.obo.boot/chmo
+                        ;; net.wikipunk.obo.boot/cido
+                        ;; net.wikipunk.obo.boot/cio
+                        ;; net.wikipunk.obo.boot/cl
+                        ;; net.wikipunk.obo.boot/clao
+                        ;; net.wikipunk.obo.boot/clo
+                        ;; net.wikipunk.obo.boot/clyh
+                        ;; net.wikipunk.obo.boot/cmo
+                        ;; net.wikipunk.obo.boot/cob
+                        ;; net.wikipunk.obo.boot/colao
+                        ;; net.wikipunk.obo.boot/cro
+                        ;; net.wikipunk.obo.boot/cteno
+                        ;; net.wikipunk.obo.boot/cto
+                        ;; net.wikipunk.obo.boot/cvdo
+                        ;; net.wikipunk.obo.boot/ddanat
+                        ;; net.wikipunk.obo.boot/ddpheno
+                        ;; net.wikipunk.obo.boot/dideo
+                        ;; net.wikipunk.obo.boot/disdriv
+                        ;; net.wikipunk.obo.boot/doid
+                        ;; net.wikipunk.obo.boot/dron
+                        ;; net.wikipunk.obo.boot/duo
+                        ;; net.wikipunk.obo.boot/ecao
+                        ;; net.wikipunk.obo.boot/eco
+                        ;; net.wikipunk.obo.boot/ecocore
+                        ;; net.wikipunk.obo.boot/ecto
+                        ;; net.wikipunk.obo.boot/emapa
+                        ;; net.wikipunk.obo.boot/envo
+                        ;; net.wikipunk.obo.boot/epio
+                        ;; net.wikipunk.obo.boot/eupath
+                        ;; net.wikipunk.obo.boot/exo
+                        ;; net.wikipunk.obo.boot/fao
+                        ;; net.wikipunk.obo.boot/fbbi
+                        ;; net.wikipunk.obo.boot/fbbt
+                        ;; net.wikipunk.obo.boot/fbcv
+                        ;; net.wikipunk.obo.boot/fbdv
+                        ;; net.wikipunk.obo.boot/fideo
+                        ;; net.wikipunk.obo.boot/flopo
+                        ;; net.wikipunk.obo.boot/fma
+                        ;; net.wikipunk.obo.boot/fobi
+                        ;; net.wikipunk.obo.boot/foodon
+                        ;; net.wikipunk.obo.boot/fovt
+                        ;; net.wikipunk.obo.boot/fypo
+                        ;; net.wikipunk.obo.boot/gecko
+                        ;; net.wikipunk.obo.boot/genepio
+                        ;; net.wikipunk.obo.boot/geno
+                        ;; net.wikipunk.obo.boot/geo
+                        ;; net.wikipunk.obo.boot/gno
+                        ;; net.wikipunk.obo.boot/go
+                        ;; net.wikipunk.obo.boot/gsso
+                        ;; net.wikipunk.obo.boot/hancestro
+                        ;; net.wikipunk.obo.boot/hao
+                        ;; net.wikipunk.obo.boot/hom
+                        ;; net.wikipunk.obo.boot/hp
+                        ;; net.wikipunk.obo.boot/hsapdv
+                        ;; net.wikipunk.obo.boot/hso
+                        ;; net.wikipunk.obo.boot/htn
+                        ;; net.wikipunk.obo.boot/iao
+                        ;; net.wikipunk.obo.boot/iceo
+                        ;; net.wikipunk.obo.boot/ico
+                        ;; net.wikipunk.obo.boot/ido
+                        ;; net.wikipunk.obo.boot/ino
+                        net.wikipunk.obo.boot/kisao
+                        ;; net.wikipunk.obo.boot/labo
+                        ;; net.wikipunk.obo.boot/lepao
+                        ;; net.wikipunk.obo.boot/ma
+                        net.wikipunk.obo.boot/mamo
+                        ;; net.wikipunk.obo.boot/maxo
+                        ;; net.wikipunk.obo.boot/mco
+                        ;; net.wikipunk.obo.boot/mf
+                        ;; net.wikipunk.obo.boot/mfmo
+                        ;; net.wikipunk.obo.boot/mfoem
+                        ;; net.wikipunk.obo.boot/mfomd
+                        ;; net.wikipunk.obo.boot/mi
+                        ;; net.wikipunk.obo.boot/miapa
+                        net.wikipunk.obo.boot/micro
+                        ;; net.wikipunk.obo.boot/mmo
+                        ;; net.wikipunk.obo.boot/mmusdv
+                        ;; net.wikipunk.obo.boot/mod
+                        ;; net.wikipunk.obo.boot/mondo
+                        ;; net.wikipunk.obo.boot/mop
+                        ;; net.wikipunk.obo.boot/mp
+                        ;; net.wikipunk.obo.boot/mpath
+                        ;; net.wikipunk.obo.boot/mpio
+                        ;; net.wikipunk.obo.boot/mro
+                        ;; net.wikipunk.obo.boot/ms
+                        ;; net.wikipunk.obo.boot/nbo
+                        ;; net.wikipunk.obo.boot/ncbitaxon
+                        ;; net.wikipunk.obo.boot/ncit
+                        ;; net.wikipunk.obo.boot/ncro
+                        net.wikipunk.obo.boot/nomen
+                        ;; net.wikipunk.obo.boot/oae
+                        ;; net.wikipunk.obo.boot/oarcs
+                        ;; net.wikipunk.obo.boot/oba
+                        ;; net.wikipunk.obo.boot/obcs
+                        ;; net.wikipunk.obo.boot/obi
+                        ;; net.wikipunk.obo.boot/obib
+                        ;; net.wikipunk.obo.boot/obo
+                        net.wikipunk.obo.boot/ogg
+                        ;; net.wikipunk.obo.boot/ogms
+                        ;; net.wikipunk.obo.boot/ogsf
+                        ;; net.wikipunk.obo.boot/ohd
+                        ;; net.wikipunk.obo.boot/ohmi
+                        ;; net.wikipunk.obo.boot/ohpi
+                        ;; net.wikipunk.obo.boot/olatdv
+                        net.wikipunk.obo.boot/omit
+                        ;; net.wikipunk.obo.boot/omo
+                        ;; net.wikipunk.obo.boot/omp
+                        ;; net.wikipunk.obo.boot/omrse
+                        ;; net.wikipunk.obo.boot/one
+                        net.wikipunk.obo.boot/ons
+                        ;; net.wikipunk.obo.boot/ontoavida
+                        net.wikipunk.obo.boot/ontoneo
+                        ;; net.wikipunk.obo.boot/oostt
+                        ;; net.wikipunk.obo.boot/opl
+                        ;; net.wikipunk.obo.boot/opmi
+                        ;; net.wikipunk.obo.boot/ornaseq
+                        ;; net.wikipunk.obo.boot/ovae
+                        ;; net.wikipunk.obo.boot/pato
+                        ;; net.wikipunk.obo.boot/pcl
+                        ;; net.wikipunk.obo.boot/pco
+                        ;; net.wikipunk.obo.boot/pdro
+                        ;; net.wikipunk.obo.boot/pdumdv
+                        ;; net.wikipunk.obo.boot/peco
+                        ;; net.wikipunk.obo.boot/phipo
+                        ;; net.wikipunk.obo.boot/plana
+                        ;; net.wikipunk.obo.boot/planp
+                        ;; net.wikipunk.obo.boot/po
+                        ;; net.wikipunk.obo.boot/poro
+                        ;; net.wikipunk.obo.boot/ppo
+                        net.wikipunk.obo.boot/pr
+                        ;; net.wikipunk.obo.boot/proco
+                        ;; net.wikipunk.obo.boot/psdo
+                        ;; net.wikipunk.obo.boot/pso
+                        ;; net.wikipunk.obo.boot/pw
+                        ;; net.wikipunk.obo.boot/rbo
+                        ;; net.wikipunk.obo.boot/ro
+                        ;; net.wikipunk.obo.boot/rs
+                        ;; net.wikipunk.obo.boot/rxno
+                        ;; net.wikipunk.obo.boot/sbo
+                        ;; net.wikipunk.obo.boot/scdo
+                        ;; net.wikipunk.obo.boot/sepio
+                        ;; net.wikipunk.obo.boot/sibo
+                        ;; net.wikipunk.obo.boot/so
+                        ;; net.wikipunk.obo.boot/spd
+                        ;; net.wikipunk.obo.boot/stato
+                        ;; net.wikipunk.obo.boot/swo
+                        ;; net.wikipunk.obo.boot/symp
+                        ;; net.wikipunk.obo.boot/t4fs
+                        ;; net.wikipunk.obo.boot/taxrank
+                        ;; net.wikipunk.obo.boot/to
+                        net.wikipunk.obo.boot/trans
+                        ;; net.wikipunk.obo.boot/tto
+                        ;; net.wikipunk.obo.boot/txpo
+                        net.wikipunk.obo.boot/uberon
+                        ;; net.wikipunk.obo.boot/uo
+                        ;; net.wikipunk.obo.boot/upheno
+                        net.wikipunk.obo.boot/vario
+                        ;; net.wikipunk.obo.boot/vbo
+                        net.wikipunk.obo.boot/vo
+                        ;; net.wikipunk.obo.boot/vt
+                        net.wikipunk.obo.boot/vto
+                        ;; net.wikipunk.obo.boot/wbbt
+                        ;; net.wikipunk.obo.boot/wbls
+                        ;; net.wikipunk.obo.boot/wbphenotype
+                        ;; net.wikipunk.obo.boot/xao
+                        ;; net.wikipunk.obo.boot/xco
+                        net.wikipunk.obo.boot/xlmod
+                        net.wikipunk.obo.boot/xpo
+                        ;; net.wikipunk.obo.boot/zeco
+                        ;; net.wikipunk.obo.boot/zfa
+                        ;; net.wikipunk.obo.boot/zfs
+                        net.wikipunk.obo.boot/zp]}}
