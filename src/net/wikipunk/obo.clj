@@ -8,16 +8,9 @@
    [net.wikipunk.obo.boot]
    [net.wikipunk.rdf :as rdf]))
 
-(defn quickstart
-  [])
-
 (defrecord OBO [vocab boot]
   com/Lifecycle
   (start [this]
-    (try
-      (binding [*ns* (find-ns (or (:quickstart-ns this) 'dev))]
-        (quickstart))
-      (catch Throwable ex))
     this)
   (stop [this]
     this)
