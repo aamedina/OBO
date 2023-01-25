@@ -3430,7 +3430,7 @@
   {:dc11/description
    "The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology.",
    :dc11/title "Unified phenotype ontology (uPheno)",
-   :dcat/downloadURL "http://purl.obolibrary.org/obo/upheno.owl",
+   :dcat/downloadURL "https://raw.githubusercontent.com/obophenotype/upheno/7f56b3b4d2adc2b266eeb6694205c42db967bcc2/imports/extra.owl",
    :doap/bug-database "https://github.com/obophenotype/upheno/issues",
    :doap/mailing-list
    "https://groups.google.com/forum/#!forum/phenotype-ontologies-editors",
