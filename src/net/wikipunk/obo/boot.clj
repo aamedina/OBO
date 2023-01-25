@@ -52,6 +52,39 @@
    :rdfa/prefix "wiki"
    :rdf/type :rdfa/PrefixMapping})
 
+(def cellline
+  {:rdfa/uri "http://www.ebi.ac.uk/cellline#"
+   :rdfa/prefix "cellline"
+   :rdf/type :rdfa/PrefixMapping})
+
+(def GAZ
+  {:rdf/type :rdfa/PrefixMapping
+   :rdfa/uri "http://purl.obolibrary.org/obo/gaz.owl#"
+   :rdfa/prefix "GAZ"})
+
+(def gaz
+  {:rdf/type :rdfa/PrefixMapping
+   :rdfa/prefix "gaz",
+   :rdfa/uri    "http://purl.obolibrary.org/obo/gaz#"})
+
+(def REO
+  {:dcat/downloadURL "https://raw.githubusercontent.com/tis-lab/reagent-ontology/master/reo/ontology_files/reo_pre-merged_or_reasoned_files/reo_merged_3-17-15.owl"
+   #_"https://github.com/tis-lab/reagent-ontology/raw/master/reo/ontology_files/reo_pre-merged_or_reasoned_files/reo_reasoned_9-6-12.owl"
+   :rdf/type :rdfa/PrefixMapping
+   :rdfa/prefix "REO",
+   :rdfa/uri    "http://purl.obolibrary.org/obo/reo.owl#"})
+
+(def ro
+  {:rdf/type    :rdfa/PrefixMapping
+   :rdfa/prefix "ro",
+   :rdfa/uri    "http://www.obofoundry.org/ro/ro.owl#"})
+
+(def ERO
+  {:dcat/downloadURL "https://archivo.dbpedia.org/download?o=http%3A//purl.obolibrary.org/obo/ero.owl&f=ttl&v=2021.06.05-084128"
+   :rdf/type         :rdfa/PrefixMapping
+   :rdfa/prefix      "ERO"
+   :rdfa/uri         "http://purl.obolibrary.org/obo/ero.owl#"})
+
 (def ADO
   "Alzheimer's Disease Ontology is a knowledge-based ontology that encompasses varieties of concepts related to Alzheimer'S Disease, structured by upper level Basic Formal Ontology(BFO). This Ontology is enriched by the interrelated entities that demonstrate the network of the understanding on Alzheimer's disease and can be readily applied for text mining."
   {:dc11/description
@@ -354,6 +387,31 @@
    "http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView",
    :sh/namespace "http://purl.obolibrary.org/obo/CHEBI_",
    :sh/prefix "CHEBI"})
+
+(def chebi
+  {:rdf/type :rdfa/PrefixMapping,
+   :rdfa/prefix "chebi",
+   :rdfa/uri "http://purl.obolibrary.org/obo/chebi/"})
+
+(def chebi1
+  {:rdf/type :rdfa/PrefixMapping,
+   :rdfa/prefix "chebi1",
+   :rdfa/uri "http://purl.obolibrary.org/obo/chebi#2"})
+
+(def chebi2
+  {:rdf/type :rdfa/PrefixMapping,
+   :rdfa/prefix "chebi2",
+   :rdfa/uri "http://purl.obolibrary.org/obo/chebi#"})
+
+(def chebi3
+  {:rdf/type :rdfa/PrefixMapping,
+   :rdfa/prefix "chebi3",
+   :rdfa/uri "http://purl.obolibrary.org/obo/chebi#3"})
+
+(def chebi4
+  {:rdf/type :rdfa/PrefixMapping,
+   :rdfa/prefix "chebi4",
+   :rdfa/uri "http://purl.obolibrary.org/obo/chebi#1"})
 
 (def CHEMINF
   "Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them."
@@ -2343,6 +2401,11 @@
    :rdfa/uri "http://purl.obolibrary.org/obo/ohpi.owl#",
    :sh/namespace "http://purl.obolibrary.org/obo/OHPI_",
    :sh/prefix "OHPI"})
+
+(def OMIABIS
+  {:rdf/type :rdfa/PrefixMapping
+   :rdfa/uri "http://purl.obolibrary.org/obo/omiabis.owl#"
+   :rdfa/prefix "OMIABIS"})
 
 (def OMIT
   "Ontology to establish data exchange standards and common data elements in the microRNA (miR) domain"

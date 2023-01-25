@@ -7,6 +7,7 @@
   See also https://github.com/stuartsierra/component.repl"
   (:require
    [arachne.aristotle.registry :as reg]
+   [clojure.datafy :refer [datafy]]
    [clojure.edn :as edn]
    [clojure.java.io :as io]
    [clojure.java.javadoc :refer [javadoc]]
@@ -21,7 +22,7 @@
    [com.stuartsierra.component :as com]
    [com.stuartsierra.component.repl :refer [reset set-init start stop system]]
    [com.walmartlabs.schematic :as sc]
-   [net.wikipunk.rdf :as rdf]
+   [net.wikipunk.rdf :as rdf :refer [doc]]
    [net.wikipunk.obo :as obo]
    [zprint.core :as zprint]))
 
