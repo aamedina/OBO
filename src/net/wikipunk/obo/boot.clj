@@ -37,6 +37,11 @@
    :rdfa/prefix "obofmd",
    :rdf/type    :rdfa/PrefixMapping})
 
+(def ncbitaxon
+  {:rdf/type         :rdfa/PrefixMapping
+   :rdfa/uri         "http://purl.obolibrary.org/obo/ncbitaxon#"
+   :rdfa/prefix      "ncbitaxon"})
+
 (def Property
   {:rdfa/uri "https://www.wikidata.org/wiki/Property:"
    :rdfa/prefix "Property"
