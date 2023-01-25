@@ -3371,6 +3371,11 @@
    :sh/namespace "http://purl.obolibrary.org/obo/TXPO_",
    :sh/prefix "TXPO"})
 
+(def UBREL
+  {:rdf/type    :rdfa/PrefixMapping
+   :rdfa/uri    "file:/Users/michaelashburner/Desktop/gaz/gaz.obo"
+   :rdfa/prefix "UBREL"})
+
 (def UBERON
   "An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies"
   {:dc11/description
