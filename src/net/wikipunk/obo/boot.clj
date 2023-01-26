@@ -2504,7 +2504,7 @@
   {:dc11/description
    "An ontology for description of concepts in the nutritional studies domain.",
    :dc11/title "Ontology for Nutritional Studies",
-   :dcat/downloadURL "http://purl.obolibrary.org/obo/ons.owl",
+   :dcat/downloadURL "http://purl.obolibrary.org/obo/ons.owl"
    :doap/bug-database
    "https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues",
    :foaf/homepage
