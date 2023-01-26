@@ -1305,7 +1305,8 @@
   {:dc11/description
    "The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.",
    :dc11/title "Genomic Epidemiology Ontology",
-   :dcat/downloadURL "https://raw.githubusercontent.com/GenEpiO/genepio/master/src/ontology/genepio-merged.owl",
+   :dcat/downloadURL #_"https://raw.githubusercontent.com/GenEpiO/genepio/master/src/ontology/genepio-merged.owl"
+   "resources/genepio-merged.owl"
    :doap/bug-database "https://github.com/GenEpiO/genepio/issues/",
    :foaf/homepage "http://genepio.org/",
    :foaf/page "https://github.com/GenEpiO/genepio",
@@ -1560,6 +1561,24 @@
    :rdfa/uri "http://purl.obolibrary.org/obo/iao.owl#",
    :sh/namespace "http://purl.obolibrary.org/obo/IAO_",
    :sh/prefix "IAO"})
+
+(def pno
+  "An ontology of information entities."
+  {:dc11/description "An ontology of information entities.",
+   :dc11/title       "Information Artifact Ontology",
+   :dcat/downloadURL "https://raw.githubusercontent.com/ProperNameOntology/proper-name-ontology/master/pno.owl",
+   :rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "pno",
+   :rdfa/uri         "http://purl.obolibrary.org/obo/pno.owl#"})
+
+(def dacts
+  "An ontology of information entities."
+  {:dc11/description "An ontology of information entities.",
+   :dc11/title       "Information Artifact Ontology",   
+   :dcat/downloadURL "http://purl.obolibrary.org/obo/iao/d-acts.owl",
+   :rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "d-acts",
+   :rdfa/uri         "http://purl.obolibrary.org/obo/iao/d-acts.owl"})
 
 (def ICEO
   "ICEO is an integrated biological ontology for the description of bacterial integrative and conjugative elements (ICEs)."
@@ -2110,6 +2129,13 @@
    :rdfs/seeAlso "https://bioportal.bioontology.org/ontologies/NBO",
    :sh/namespace "http://purl.obolibrary.org/obo/NBO_",
    :sh/prefix "NBO"})
+
+(def nbo
+  {:dcat/downloadURL "http://purl.obolibrary.org/obo/nbo.owl",
+   :rdf/type :rdfa/PrefixMapping,
+   :rdfa/prefix "nbo",
+   :rdfa/uri "http://purl.obolibrary.org/obo/nbo.owl#",
+   :rdfs/seeAlso "https://bioportal.bioontology.org/ontologies/NBO"})
 
 (def NCBITaxon
   "An ontology representation of the NCBI organismal taxonomy"
