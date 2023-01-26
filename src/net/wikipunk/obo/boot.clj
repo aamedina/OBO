@@ -1201,6 +1201,11 @@
    :sh/namespace "http://purl.obolibrary.org/obo/FMA_",
    :sh/prefix "FMA"})
 
+(def fma
+  {:rdf/type :rdfa/PrefixMapping,
+   :rdfa/prefix "fma",
+   :rdfa/uri "http://purl.obolibrary.org/obo/fma.owl#"})
+
 (def FOBI
   "FOBI (Food-Biomarker Ontology) is an ontology to represent food intake data and associate it with metabolomic data"
   {:dc11/description
@@ -3401,6 +3406,11 @@
   {:rdf/type    :rdfa/PrefixMapping
    :rdfa/uri    "file:/Users/michaelashburner/Desktop/gaz/gaz.obo"
    :rdfa/prefix "UBREL"})
+
+(def UBPROP
+  {:rdf/type    :rdfa/PrefixMapping
+   :rdfa/uri    "file:/Users/michaelashburner/Desktop/gaz/gaz.obo"
+   :rdfa/prefix "UBPROP"})
 
 (def UBERON
   "An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies"
