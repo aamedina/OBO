@@ -24,9 +24,8 @@
    [com.walmartlabs.schematic :as sc]
    [net.wikipunk.rdf :as rdf :refer [doc]]
    [net.wikipunk.obo :as obo]
+   [net.wikipunk.obo.boot :as boot]
    [zprint.core :as zprint]))
-
-(require '[net.wikipunk.obo.boot :as boot] :reload)
 
 (set-init
   (fn [_]
