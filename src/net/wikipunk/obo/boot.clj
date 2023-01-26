@@ -1121,7 +1121,7 @@
    :dc11/title "FlyBase Controlled Vocabulary",
    :dcat/downloadURL "http://purl.obolibrary.org/obo/fbcv.owl",
    :doap/bug-database
-   "https://github.com/FlyBase/flybase-controlled-vocabulary/issues",
+   "https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv-full.owl",
    :foaf/homepage :obo/fbcv,
    :idot/preferredPrefix "FBcv",
    :obofmd/activity_status "active",
@@ -1131,6 +1131,12 @@
    :rdfs/seeAlso "http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013",
    :sh/namespace "http://purl.obolibrary.org/obo/FBcv_",
    :sh/prefix "FBcv"})
+
+(def fbcv
+  {:dcat/downloadURL "http://purl.obolibrary.org/obo/fbcv.owl",
+   :rdf/type :rdfa/PrefixMapping,
+   :rdfa/prefix "fbcv",
+   :rdfa/uri "http://purl.obolibrary.org/obo/fbcv#"})
 
 (def FBdv
   "A structured controlled vocabulary of the development of Drosophila melanogaster."
