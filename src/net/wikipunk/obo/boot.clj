@@ -1236,7 +1236,7 @@
   {:dc11/description
    "A broadly scoped ontology representing entities which bear a “food role”. It encompasses materials in natural ecosystems and agriculture that are consumed by humans and domesticated animals. This includes any generic (unbranded) raw or processed food material found in processing plants, markets, stores or food distribution points. FoodOn also imports nutritional component and dietary pattern terms from other OBO Foundry ontologies to support interoperability in diet and nutrition research",
    :dc11/title "Food Ontology",
-   :dcat/downloadURL "http://purl.obolibrary.org/obo/foodon.owl",
+   :dcat/downloadURL #_"http://purl.obolibrary.org/obo/foodon.owl", "resources/foodon.owl"
    :doap/bug-database "https://github.com/FoodOntology/foodon/issues/",
    :foaf/homepage "https://foodon.org/",
    :idot/preferredPrefix "FOODON",
@@ -1419,7 +1419,7 @@
   {:dc11/description
    "The Gender, Sex, and Sexual Orientation (GSSO) ontology has terms for annotating interdisciplinary information concerning gender, sex, and sexual orientation for primary usage in the biomedical and adjacent sciences.",
    :dc11/title "Gender, Sex, and Sexual Orientation (GSSO) ontology",
-   :dcat/downloadURL "http://purl.obolibrary.org/obo/gsso.owl"
+   :dcat/downloadURL #_"http://purl.obolibrary.org/obo/gsso.owl" "resources/gsso.owl"
    :doap/bug-database "https://github.com/Superraptor/GSSO/issues",
    :foaf/homepage "https://gsso.research.cchmc.org/",
    :idot/preferredPrefix "GSSO",
@@ -1661,7 +1661,7 @@
   {:dc11/description
    "A classification of algorithms for simulating biology, their parameters, and their outputs",
    :dc11/title "Kinetic Simulation Algorithm Ontology",
-   :dcat/downloadURL "http://purl.obolibrary.org/obo/kisao.owl"
+   :dcat/downloadURL #_"http://purl.obolibrary.org/obo/kisao.owl" "resources/kisao.owl"
    :disco/fundedBy ["https://grantome.com/search?q=R35GM119771"
                     "https://grantome.com/search?q=P41EB023912"],
    :doap/bug-database "https://github.com/SED-ML/KiSAO/issues",
@@ -1924,7 +1924,7 @@
   {:dc11/description
    "An ontology of prokaryotic phenotypic and metabolic characters",
    :dc11/title "Ontology of Prokaryotic Phenotypic and Metabolic Characters",
-   :dcat/downloadURL "http://purl.obolibrary.org/obo/micro.owl"
+   :dcat/downloadURL #_"http://purl.obolibrary.org/obo/micro.owl" "resources/MicrO.owl"
    :doap/bug-database "https://github.com/carrineblank/MicrO/issues",
    :foaf/homepage "https://github.com/carrineblank/MicrO",
    :idot/preferredPrefix "MICRO",
@@ -2224,7 +2224,7 @@
   {:dc11/description
    "NOMEN is a nomenclatural ontology for biological names (not concepts).  It encodes the goverened rules of nomenclature.",
    :dc11/title "NOMEN - A nomenclatural ontology for biological names",
-   :dcat/downloadURL "http://purl.obolibrary.org/obo/nomen.owl"
+   :dcat/downloadURL #_"http://purl.obolibrary.org/obo/nomen.owl" "resources/nomen.owl"
    :disco/fundedBy "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1356381",
    :doap/bug-database "https://github.com/SpeciesFileGroup/nomen/issues",
    :doap/mailing-list "https://groups.google.com/forum/#!forum/nomen-discuss",
