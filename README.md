@@ -10,8 +10,6 @@ Open Biological and Biomedical Ontology
 user> (reset)
 ```
 
-# some ontological highlights of OBO...
-
 ## agriculture
 
 ### Agronomy Ontology (net.wikipunk.rdf.AGRO)
