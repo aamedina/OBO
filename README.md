@@ -36,9 +36,6 @@ biological ontologies.
 The Cell Ontology is a structured controlled vocabulary for cell types
 in animals.
 
-### Fungal gross anatomy (net.wikipunk.rdf.FAO)
-A structured controlled vocabulary for the anatomy of fungi.
-
 ### The Plant Ontology (net.wikipunk.rdf.PO)
 The Plant Ontology is a structured vocabulary and database resource
 that links plant anatomy, morphology and growth and development to
@@ -80,6 +77,31 @@ indicative of a disease.
 ### Human Disease Ontology (net.wikipunk.rdf.DOID)
 An ontology for describing the classification of human diseases
 organized by etiology.
+
+### Cardiovascular Disease Ontology (net.wikipunk.rdf.CVDO)
+An ontology to describe entities related to cardiovascular diseases.
+
+### Medical Action Ontology (net.wikipunk.rdf.MAXO)
+An ontology to represent medically relevant actions, procedures,
+therapies, interventions, and recommendations.
+
+### Emotion Ontology (net.wikipunk.rdf.MFOEM)
+An ontology of affective phenomena such as emotions, moods, appraisals
+and subjective feelings.
+
+### The Mental Functioning Ontology (net.wikipunk.rdf.MF)
+The Mental Functioning Ontology is an overarching ontology for all
+aspects of mental functioning.
+
+### National Cancer Center Thesaurus (net.wikipunk.rdf.NCIT)
+The NCIt OBO Edition project aims to increase integration of the NCIt
+with OBO Library ontologies. NCIt is a reference terminology that
+includes broad coverage of the cancer domain, including cancer related
+diseases, findings and abnormalities.
+
+### Ontology for General Medical Science (net.wikipunk.rdf.OGMS)
+An ontology for representing treatment of disease and diagnosis and on
+carcinomas and other pathological entities.
 
 ## information
 
