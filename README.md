@@ -234,14 +234,54 @@ the evidence that supports them.
 
 ## organisms
 
+### Comparative Data Analysis Ontology (net.wikipunk.rdf.CDAO)
+A formalization of concepts and relations relevant to evolutionary
+comparative analysis.
+
+### NCBI organismal classification (net.wikipunk.rdf.NCBITaxon)
+An ontology representation of the NCBI organismal taxonomy.
+
+### Gender, Sex, and Sexual Orientation Ontology (net.wikipunk.rdf.GSSO)
+The Gender, Sex, and Sexual Orientation (GSSO) ontology has terms for
+annotating interdisciplinary information concerning gender, sex, and
+sexual orientation for primary usage in the biomedical and adjacent
+sciences.
+
 ## phenotype
+
+### Flora Phenotype Ontology (net.wikipunk.rdf.FLOPO)
+Traits and phenotypes of flowering plants occurring in digitized
+Floras.
 
 ### Genotype Ontology (net.wikipunk.rdf.GENO)
 An integrated ontology for representing the genetic variations
 described in genotypes, and their causal relationships to phenotype
 and diseases.
 
+### Phenotype and Trait Ontology (net.wikipunk.rdf.PATO)
+An ontology of phenotypic qualities (properties, attributes or
+characteristics).
+
+### Ontology of Biological Attributes (net.wikipunk.rdf.OBA)
+A collection of biological attributes (traits) covering all kingdoms
+of life. Interoperable with VT (vertebrate trait ontology) and TO
+(plant trait ontology). Extends PATO.
+
+### Plant Phenology Ontology (net.wikipunk.rdf.PPO)
+An ontology for describing the phenology of individual plants and
+populations of plants, and for integrating plant phenological data
+across sources and scales.
+
 ## simulation
 
+### OntoAvida (net.wikipunk.rdf.ONTOAVIDA)
+OntoAvida develops an integrated vocabulary for the description of the
+most widely-used computational approach for studying evolution using
+digital organisms (i.e., self-replicating computer programs that
+evolve within a user-defined computational environment).
+
+### Kinetic Simulation Algorithm Ontology (net.wikipunk.rdf.KISAO)
+The Kinetic Simulation Algorithm Ontology (KiSAO) describes algorithms
+for simulating models in biology, their parameters, and their outputs.
 
 
