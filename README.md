@@ -41,7 +41,28 @@ The Plant Ontology is a structured vocabulary and database resource
 that links plant anatomy, morphology and growth and development to
 plant genomics data.
 
+### Uberon multi-species anatomy ontology (net.wikipunk.rdf.UBERON)
+An integrated cross-species anatomy ontology covering animals and
+bridging multiple species-specific ontologies.
+
 ## biological systems
+
+### Genotype Ontology (net.wikipunk.rdf.GENO)
+An integrated ontology for representing the genetic variations
+described in genotypes, and their causal relationships to phenotype
+and diseases.
+
+### Gene Ontology (net.wikipunk.rdf.GO)
+An ontology for describing the function of genes and gene products.
+
+### Interaction Network Ontology (net.wikipunk.rdf.INO)
+The Interaction Network Ontology (INO) is an ontology in the domain of
+interactions and interaction networks. INO represents general and
+species-neutral types of interactions and interaction networks, and
+their related elements and relations.
+
+### Neuro Behavior Ontology (net.wikipunk.rdf.NBO)
+An ontology of human and animal behaviours and behavioural phenotypes.
 
 ## chemistry and biochemistry
 

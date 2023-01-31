@@ -3796,3 +3796,8 @@
    :rdfa/uri "http://purl.obolibrary.org/obo/zp.owl#",
    :sh/namespace "http://purl.obolibrary.org/obo/ZP_",
    :sh/prefix "ZP"})
+
+(def EFO
+  {:rdf/type    :rdfa/PrefixMapping
+   :rdfa/uri    "http://www.ebi.ac.uk/efo/"
+   :rdfa/prefix "efo"})
