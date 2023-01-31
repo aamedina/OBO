@@ -3800,4 +3800,4 @@
 (def EFO
   {:rdf/type    :rdfa/PrefixMapping
    :rdfa/uri    "http://www.ebi.ac.uk/efo/"
-   :rdfa/prefix "efo"})
+   :rdfa/prefix "EFO"})
