@@ -104,6 +104,29 @@ nutrition research.
 
 ## environment
 
+### net.wikipunk.rdf.ECOCORE
+Ecocore is a community ontology for the concise and controlled
+description of ecological traits of organisms. 
+
+### Environment Ontology (net.wikipunk.rdf.ENVO)
+An ontology of environmental systems, components, and processes. 
+
+### Environmental conditions (net.wikipunk.rdf.ECTO)
+ECTO describes exposures to experimental treatments of plants and
+model organisms (e.g. exposures to modification of diet, lighting
+levels, temperature); exposures of humans or any other organisms to
+stressors through a variety of routes, for purposes of public health,
+environmental monitoring etc, stimuli, natural and experimental, any
+kind of environmental condition or change in condition that can be
+experienced by an organism or population of organisms on earth. The
+scope is very general and can include for example plant treatment
+regimens, as well as human clinical exposures (although these may
+better be handled by a more specialized ontology).
+
+### Population and Community Ontology (net.wikipunk.rdf.PCO)
+An ontology about groups of interacting organisms such as populations
+and communities.
+
 ## health
 
 ### Symptom Ontology (net.wikipunk.rdf.SYMP)
