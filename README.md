@@ -165,6 +165,12 @@ carcinomas and other pathological entities.
 
 ## information
 
+### Data Use Ontology (net.wikipunk.rdf.DUO)
+DUO is an ontology which represent data use conditions.
+
+### Information Artifact Ontology (net.wikipunk.rdf.IAO)
+An ontology of information entities.
+
 ## information technology
 
 ### The Statistical Methods Ontology (net.wikipunk.rdf.STATO)
@@ -179,6 +185,9 @@ review of the results.
 
 ## investigations
 
+### Evidence ontology (net.wikipunk.rdf.ECO)
+An ontology for experimental and other evidence statements.
+
 ### Ontology for Biomedical Investigations (net.wikipunk.rdf.OBI)
 The Ontology for Biomedical Investigations (OBI) is build in a
 collaborative, international effort and will serve as a resource for
@@ -189,6 +198,37 @@ Functional Genomics Investigation Ontology (FuGO) and will contain
 both terms that are common to all biomedical investigations, including
 functional genomics investigations and those that are more domain
 specific.
+
+### Mass spectrometry ontology (net.wikipunk.rdf.MS)
+A structured controlled vocabulary for the annotation of experiments
+concerned with proteomics mass spectrometry.
+
+### Next Generation Biobanking Ontology (net.wikipunk.rdf.NGBO)
+Next Generation Biobanking Ontology (NGBO) is an open application
+ontology representing contextual data about omics digital assets in
+biobank. The ontology focuses on capturing the information about three
+main activities: wet bench analysis used to generate omics data,
+bioinformatics analysis used to analyze and interpret data, and data
+management.
+
+### Ontology for Biobanking (net.wikipunk.rdf.OBIB)
+An ontology built for annotation and modeling of biobank repository
+and biobanking administration.
+
+### Ontology of Precision Medicine (net.wikipunk.rdf.OPMI)
+The Ontology of Precision Medicine and Investigation (OPMI) aims to
+ontologically represent and standardize various entities and relations
+associated with precision medicine and related investigations at
+different conditions.
+
+### Plant Experimental Conditions Ontology (net.wikipunk.rdf.PECO)
+A structured, controlled vocabulary which describes the treatments,
+growing conditions, and/or study types used in plant biology
+experiments.
+
+### Scientific Evidence and Provenance Information Ontology (net.wikipunk.rdf.SEPIO)
+An ontology for representing the provenance of scientific claims and
+the evidence that supports them. 
 
 ## microbiology
 
