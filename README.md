@@ -93,7 +93,7 @@ and subjective feelings.
 The Mental Functioning Ontology is an overarching ontology for all
 aspects of mental functioning.
 
-### National Cancer Center Thesaurus (net.wikipunk.rdf.NCIT)
+### National Cancer Institute Thesaurus (net.wikipunk.rdf.NCIT)
 The NCIt OBO Edition project aims to increase integration of the NCIt
 with OBO Library ontologies. NCIt is a reference terminology that
 includes broad coverage of the cancer domain, including cancer related
