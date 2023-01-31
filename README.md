@@ -70,6 +70,22 @@ An ontology of human and animal behaviours and behavioural phenotypes.
 A structured classification of molecular entities of biological
 interest focusing on 'small' chemical compounds.
 
+### Chemical Information Ontology (net.wikipunk.rdf.CHEMINF)
+Includes terms for the descriptors commonly used in cheminformatics
+software applications and the algorithms which generate them.
+
+### Molecular Process Ontology (net.wikipunk.rdf.MOP)
+Processes at the molecular level.
+
+### Name Reaction Ontology (net.wikipunk.rdf.RXNO)
+Connects organic name reactions to their roles in an organic synthesis
+and to processes in MOP.
+
+### Sequence Ontology (net.wikipunk.rdf.SO)
+A structured controlled vocabulary for sequence annotation, for the
+exchange of annotation data and for the description of sequence
+objects in databases.
+
 ## diet, metabolomics, and nutrition
 
 ### Compositional Dietary Nutrition Ontology (net.wikipunk.rdf.CDNO)
