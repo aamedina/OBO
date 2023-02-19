@@ -3802,6 +3802,11 @@
    :rdfa/uri    "http://www.ebi.ac.uk/efo/"
    :rdfa/prefix "EFO"})
 
+(def efo
+  {:rdf/type    :rdfa/PrefixMapping
+   :rdfa/uri    "http://www.ebi.ac.uk/efo/efo.owl#"
+   :rdfa/prefix "efo"})
+
 (def SEONT
   {:dcat/downloadURL "https://raw.githubusercontent.com/AgriculturalSemantics/SEOnt/master/seont-full.owl"
    :rdf/type         :rdfa/PrefixMapping

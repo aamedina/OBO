@@ -3,3 +3,4 @@ src/net/wikipunk/rdf/*.clj filter=lfs diff=lfs merge=lfs -text
 resources/parents.edn filter=lfs diff=lfs merge=lfs -text
 resources/descendants.edn filter=lfs diff=lfs merge=lfs -text
 resources/ancestors.edn filter=lfs diff=lfs merge=lfs -text
+*.fressian filter=lfs diff=lfs merge=lfs -text
