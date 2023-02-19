@@ -2,7 +2,7 @@
  {com.stuartsierra/component
   {:mvn/version "1.1.0"}
   io.github.aamedina/rdf
-  {:git/sha "454cb5598236d7d01a877c36830a73d3ec373f46"}
+  {:git/sha "76d843150d18f1a6115d9a26baf99f5a3a80469a"}
   org.clojure/clojure
   {:mvn/version "1.11.1"}}
  :paths ["src" "classes"]
@@ -22,9 +22,8 @@
     vlaaad/reveal
     {:mvn/version "1.3.277"}}
    :extra-paths ["dev"]
-   :jvm-opts    ["-Xms100g"
-                 "-Xmx100g"
-                 "-XX:-OmitStackTraceInFastThrow"
+   :jvm-opts    ["-XX:-OmitStackTraceInFastThrow"
                  "-XX:+HeapDumpOnOutOfMemoryError"
                  "-Dorg.slf4j.simpleLogger.defaultLogLevel=warn"
-                 "-Djdk.xml.entityExpansionLimit=0"]}}}
+                 "-Djdk.xml.entityExpansionLimit=0"
+                 "-Djava.util.Arrays.useLegacyMergeSort=true"]}}}
