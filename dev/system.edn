@@ -1,189 +1,190 @@
 {:vocab {:sc/create-fn net.wikipunk.rdf/map->UniversalTranslator
-         :sc/refs      [:obo]}
+         :sc/refs      [:obo]
+         :init-ns      net.wikipunk.mop.init}
  :obo   {:sc/create-fn net.wikipunk.obo/map->OBO
-         :boot         [;; net.wikipunk.obo.boot/ADO
-                        ;; net.wikipunk.obo.boot/AGRO
-                        ;; net.wikipunk.obo.boot/AISM
-                        ;; net.wikipunk.obo.boot/AMPHX
-                        ;; net.wikipunk.obo.boot/APO
-                        ;; net.wikipunk.obo.boot/APOLLO_SV
-                        ;; net.wikipunk.obo.boot/ARO
-                        ;; net.wikipunk.obo.boot/BCO
-                        ;; net.wikipunk.obo.boot/BFO
-                        ;; net.wikipunk.obo.boot/BSPO
-                        ;; net.wikipunk.obo.boot/BTO
-                        ;; net.wikipunk.obo.boot/CARO
-                        ;; net.wikipunk.obo.boot/CDAO
-                        ;; net.wikipunk.obo.boot/CDNO
-                        net.wikipunk.obo.boot/CHEBI ; needs to be regenerated with full terms
-                        ;; net.wikipunk.obo.boot/CHEMINF
-                        ;; net.wikipunk.obo.boot/CHIRO
-                        ;; net.wikipunk.obo.boot/CHMO
-                        ;; net.wikipunk.obo.boot/CIDO
-                        ;; net.wikipunk.obo.boot/CIO
-                        ;; net.wikipunk.obo.boot/CL
-                        ;; net.wikipunk.obo.boot/CLAO
-                        ;; net.wikipunk.obo.boot/CLO
-                        ;; net.wikipunk.obo.boot/CLYH
-                        ;; net.wikipunk.obo.boot/CMO
-                        ;; net.wikipunk.obo.boot/COB
-                        ;; net.wikipunk.obo.boot/COLAO
-                        ;; net.wikipunk.obo.boot/CRO
-                        ;; net.wikipunk.obo.boot/CTENO
+         :boot         [net.wikipunk.obo.boot/ADO
+                        net.wikipunk.obo.boot/AGRO
+                        net.wikipunk.obo.boot/AISM
+                        net.wikipunk.obo.boot/AMPHX
+                        net.wikipunk.obo.boot/APO
+                        net.wikipunk.obo.boot/APOLLO_SV
+                        net.wikipunk.obo.boot/ARO
+                        net.wikipunk.obo.boot/BCO
+                        net.wikipunk.obo.boot/BFO
+                        net.wikipunk.obo.boot/BSPO
+                        net.wikipunk.obo.boot/BTO
+                        net.wikipunk.obo.boot/CARO
+                        net.wikipunk.obo.boot/CDAO
+                        net.wikipunk.obo.boot/CDNO
+                        net.wikipunk.obo.boot/CHEBI
+                        net.wikipunk.obo.boot/CHEMINF
+                        net.wikipunk.obo.boot/CHIRO
+                        net.wikipunk.obo.boot/CHMO
+                        net.wikipunk.obo.boot/CIDO
+                        net.wikipunk.obo.boot/CIO
+                        net.wikipunk.obo.boot/CL
+                        net.wikipunk.obo.boot/CLAO
+                        net.wikipunk.obo.boot/CLO
+                        net.wikipunk.obo.boot/CLYH
+                        net.wikipunk.obo.boot/CMO
+                        net.wikipunk.obo.boot/COB
+                        net.wikipunk.obo.boot/COLAO
+                        net.wikipunk.obo.boot/CRO
+                        net.wikipunk.obo.boot/CTENO
                         net.wikipunk.obo.boot/CTO ; [line: 25, col: 32] {E201} Multiple children of property element
-                        ;; net.wikipunk.obo.boot/CVDO
-                        ;; net.wikipunk.obo.boot/DDANAT
-                        ;; net.wikipunk.obo.boot/DDPHENO
-                        ;; net.wikipunk.obo.boot/DIDEO
-                        ;; net.wikipunk.obo.boot/DISDRIV
-                        ;; net.wikipunk.obo.boot/DOID
-                        ;; net.wikipunk.obo.boot/DRON
-                        ;; net.wikipunk.obo.boot/DUO
-                        ;; net.wikipunk.obo.boot/ECAO
-                        ;; net.wikipunk.obo.boot/ECO
-                        ;; net.wikipunk.obo.boot/ECOCORE
-                        ;; net.wikipunk.obo.boot/ECTO
-                        ;; net.wikipunk.obo.boot/EMAPA
-                        ;; net.wikipunk.obo.boot/ENVO
-                        ;; net.wikipunk.obo.boot/EPIO
-                        ;; net.wikipunk.obo.boot/EUPATH
-                        ;; net.wikipunk.obo.boot/ExO
-                        ;; net.wikipunk.obo.boot/FAO
-                        ;; net.wikipunk.obo.boot/FBbi
-                        ;; net.wikipunk.obo.boot/FBbt
-                        ;; net.wikipunk.obo.boot/FBcv
-                        ;; net.wikipunk.obo.boot/FBdv
-                        ;; net.wikipunk.obo.boot/FIDEO
-                        ;; net.wikipunk.obo.boot/FLOPO
-                        ;; net.wikipunk.obo.boot/FOBI
-                        ;; net.wikipunk.obo.boot/FOODON
-                        ;; net.wikipunk.obo.boot/FOVT
-                        ;; net.wikipunk.obo.boot/FYPO
-                        ;; net.wikipunk.obo.boot/GECKO
-                        net.wikipunk.obo.boot/GENEPIO ; Bad character in IRI (space): <http://purl.obolibrary.org/obo/The[space]...>
-                        ;; net.wikipunk.obo.boot/GENO
-                        ;; net.wikipunk.obo.boot/GEO
-                        ;; net.wikipunk.obo.boot/GNO
-                        ;; net.wikipunk.obo.boot/GO
-                        ;; net.wikipunk.obo.boot/GSSO
-                        ;; net.wikipunk.obo.boot/HANCESTRO
-                        ;; net.wikipunk.obo.boot/HAO
-                        ;; net.wikipunk.obo.boot/HOM
-                        ;; net.wikipunk.obo.boot/HP
-                        ;; net.wikipunk.obo.boot/HSO
-                        ;; net.wikipunk.obo.boot/HTN
-                        ;; net.wikipunk.obo.boot/HsapDv
-                        ;; net.wikipunk.obo.boot/IAO
-                        ;; net.wikipunk.obo.boot/ICEO
-                        ;; net.wikipunk.obo.boot/ICO
-                        ;; net.wikipunk.obo.boot/IDO
-                        ;; net.wikipunk.obo.boot/INO
-                        ;; net.wikipunk.obo.boot/KISAO
-                        ;; net.wikipunk.obo.boot/LABO
-                        ;; net.wikipunk.obo.boot/LEPAO
-                        ;; net.wikipunk.obo.boot/MA
-                        ;; net.wikipunk.obo.boot/MAXO
-                        ;; net.wikipunk.obo.boot/MCO
-                        ;; net.wikipunk.obo.boot/MF
-                        ;; net.wikipunk.obo.boot/MFMO
-                        ;; net.wikipunk.obo.boot/MFOEM
-                        ;; net.wikipunk.obo.boot/MFOMD
-                        ;; net.wikipunk.obo.boot/MI
-                        ;; net.wikipunk.obo.boot/MIAPA
-                        ;; net.wikipunk.obo.boot/MICRO
-                        ;; net.wikipunk.obo.boot/MMO
-                        ;; net.wikipunk.obo.boot/MOD
-                        ;; net.wikipunk.obo.boot/MONDO
-                        ;; net.wikipunk.obo.boot/MOP
-                        ;; net.wikipunk.obo.boot/MP
-                        ;; net.wikipunk.obo.boot/MPATH
-                        ;; net.wikipunk.obo.boot/MPIO
-                        ;; net.wikipunk.obo.boot/MRO
-                        ;; net.wikipunk.obo.boot/MS
-                        ;; net.wikipunk.obo.boot/MmusDv
-                        ;; net.wikipunk.obo.boot/NBO
-                        ;; net.wikipunk.obo.boot/NCBITaxon
-                        ;; net.wikipunk.obo.boot/NCIT
-                        ;; net.wikipunk.obo.boot/NCRO
-                        ;; net.wikipunk.obo.boot/NGBO
-                        ;; net.wikipunk.obo.boot/NOMEN
-                        ;; net.wikipunk.obo.boot/OAE
-                        ;; net.wikipunk.obo.boot/OARCS
-                        ;; net.wikipunk.obo.boot/OBA
-                        ;; net.wikipunk.obo.boot/OBCS
-                        ;; net.wikipunk.obo.boot/OBI
-                        ;; net.wikipunk.obo.boot/OBIB
-                        ;; net.wikipunk.obo.boot/OGG
-                        ;; net.wikipunk.obo.boot/OGMS
-                        ;; net.wikipunk.obo.boot/OGSF
-                        ;; net.wikipunk.obo.boot/OHD
-                        ;; net.wikipunk.obo.boot/OHMI
-                        ;; net.wikipunk.obo.boot/OHPI
-                        ;; net.wikipunk.obo.boot/OMIT
-                        ;; net.wikipunk.obo.boot/OMO
-                        ;; net.wikipunk.obo.boot/OMP
-                        ;; net.wikipunk.obo.boot/OMRSE
-                        ;; net.wikipunk.obo.boot/ONE
+                        net.wikipunk.obo.boot/CVDO
+                        net.wikipunk.obo.boot/DDANAT
+                        net.wikipunk.obo.boot/DDPHENO
+                        net.wikipunk.obo.boot/DIDEO
+                        net.wikipunk.obo.boot/DISDRIV
+                        net.wikipunk.obo.boot/DOID
+                        net.wikipunk.obo.boot/DRON
+                        net.wikipunk.obo.boot/DUO
+                        net.wikipunk.obo.boot/ECAO
+                        net.wikipunk.obo.boot/ECO
+                        net.wikipunk.obo.boot/ECOCORE
+                        net.wikipunk.obo.boot/ECTO
+                        net.wikipunk.obo.boot/EMAPA
+                        net.wikipunk.obo.boot/ENVO
+                        net.wikipunk.obo.boot/EPIO
+                        net.wikipunk.obo.boot/EUPATH
+                        net.wikipunk.obo.boot/ExO
+                        net.wikipunk.obo.boot/FAO
+                        net.wikipunk.obo.boot/FBbi
+                        net.wikipunk.obo.boot/FBbt
+                        net.wikipunk.obo.boot/FBcv
+                        net.wikipunk.obo.boot/FBdv
+                        net.wikipunk.obo.boot/FIDEO
+                        net.wikipunk.obo.boot/FLOPO
+                        net.wikipunk.obo.boot/FOBI
+                        net.wikipunk.obo.boot/FOODON
+                        net.wikipunk.obo.boot/FOVT
+                        net.wikipunk.obo.boot/FYPO
+                        net.wikipunk.obo.boot/GAZ
+                        net.wikipunk.obo.boot/GECKO
+                        net.wikipunk.obo.boot/GENEPIO
+                        net.wikipunk.obo.boot/GENO
+                        net.wikipunk.obo.boot/GEO
+                        net.wikipunk.obo.boot/GNO
+                        net.wikipunk.obo.boot/GO
+                        net.wikipunk.obo.boot/GSSO
+                        net.wikipunk.obo.boot/HANCESTRO
+                        net.wikipunk.obo.boot/HAO
+                        net.wikipunk.obo.boot/HOM
+                        net.wikipunk.obo.boot/HP
+                        net.wikipunk.obo.boot/HSO
+                        net.wikipunk.obo.boot/HTN
+                        net.wikipunk.obo.boot/HsapDv
+                        net.wikipunk.obo.boot/IAO
+                        net.wikipunk.obo.boot/ICEO
+                        net.wikipunk.obo.boot/ICO
+                        net.wikipunk.obo.boot/IDO
+                        net.wikipunk.obo.boot/INO
+                        net.wikipunk.obo.boot/KISAO
+                        net.wikipunk.obo.boot/LABO
+                        net.wikipunk.obo.boot/LEPAO
+                        net.wikipunk.obo.boot/MA
+                        net.wikipunk.obo.boot/MAXO
+                        net.wikipunk.obo.boot/MCO
+                        net.wikipunk.obo.boot/MF
+                        net.wikipunk.obo.boot/MFMO
+                        net.wikipunk.obo.boot/MFOEM
+                        net.wikipunk.obo.boot/MFOMD
+                        net.wikipunk.obo.boot/MI
+                        net.wikipunk.obo.boot/MIAPA
+                        net.wikipunk.obo.boot/MICRO
+                        net.wikipunk.obo.boot/MMO
+                        net.wikipunk.obo.boot/MOD
+                        net.wikipunk.obo.boot/MONDO
+                        net.wikipunk.obo.boot/MOP
+                        net.wikipunk.obo.boot/MP
+                        net.wikipunk.obo.boot/MPATH
+                        net.wikipunk.obo.boot/MPIO
+                        net.wikipunk.obo.boot/MRO
+                        net.wikipunk.obo.boot/MS
+                        net.wikipunk.obo.boot/MmusDv
+                        net.wikipunk.obo.boot/NBO
+                        net.wikipunk.obo.boot/NCBITaxon
+                        net.wikipunk.obo.boot/NCIT
+                        net.wikipunk.obo.boot/NCRO
+                        net.wikipunk.obo.boot/NGBO
+                        net.wikipunk.obo.boot/NOMEN
+                        net.wikipunk.obo.boot/OAE
+                        net.wikipunk.obo.boot/OARCS
+                        net.wikipunk.obo.boot/OBA
+                        net.wikipunk.obo.boot/OBCS
+                        net.wikipunk.obo.boot/OBI
+                        net.wikipunk.obo.boot/OBIB
+                        net.wikipunk.obo.boot/OGG
+                        net.wikipunk.obo.boot/OGMS
+                        net.wikipunk.obo.boot/OGSF
+                        net.wikipunk.obo.boot/OHD
+                        net.wikipunk.obo.boot/OHMI
+                        net.wikipunk.obo.boot/OHPI
+                        net.wikipunk.obo.boot/OMIT
+                        net.wikipunk.obo.boot/OMO
+                        net.wikipunk.obo.boot/OMP
+                        net.wikipunk.obo.boot/OMRSE
+                        net.wikipunk.obo.boot/ONE
                         net.wikipunk.obo.boot/ONS ; [line: 35, col: 18] {E201} Multiple children of property element
-                        ;; net.wikipunk.obo.boot/ONTOAVIDA
+                        net.wikipunk.obo.boot/ONTOAVIDA
                         net.wikipunk.obo.boot/ONTONEO ; Lexical form 'Fernanda Farinelli' is not a legal instance of Datatype[http://www.w3.org/2001/XMLSchema#Name].
                         net.wikipunk.obo.boot/OOSTT
-                        ;; net.wikipunk.obo.boot/OPL
-                        ;; net.wikipunk.obo.boot/OPMI
-                        ;; net.wikipunk.obo.boot/ORNASEQ
-                        ;; net.wikipunk.obo.boot/OVAE
-                        ;; net.wikipunk.obo.boot/OlatDv
-                        ;; net.wikipunk.obo.boot/PATO
-                        ;; net.wikipunk.obo.boot/PCL
-                        ;; net.wikipunk.obo.boot/PCO
-                        ;; net.wikipunk.obo.boot/PDRO
-                        ;; net.wikipunk.obo.boot/PECO
-                        ;; net.wikipunk.obo.boot/PHIPO
-                        ;; net.wikipunk.obo.boot/PLANA
-                        ;; net.wikipunk.obo.boot/PLANP
-                        ;; net.wikipunk.obo.boot/PO
-                        ;; net.wikipunk.obo.boot/PORO
-                        ;; net.wikipunk.obo.boot/PPO
-                        ;; net.wikipunk.obo.boot/PR
-                        ;; net.wikipunk.obo.boot/PROCO
-                        ;; net.wikipunk.obo.boot/PSDO
-                        ;; net.wikipunk.obo.boot/PSO
-                        ;; net.wikipunk.obo.boot/PW
-                        ;; net.wikipunk.obo.boot/PdumDv
-                        ;; net.wikipunk.obo.boot/RBO
-                        ;; net.wikipunk.obo.boot/RO
-                        ;; net.wikipunk.obo.boot/RS
-                        ;; net.wikipunk.obo.boot/RXNO
-                        ;; net.wikipunk.obo.boot/SBO
-                        ;; net.wikipunk.obo.boot/SCDO
-                        ;; net.wikipunk.obo.boot/SEPIO
-                        ;; net.wikipunk.obo.boot/SO
-                        ;; net.wikipunk.obo.boot/SPD
-                        ;; net.wikipunk.obo.boot/STATO
-                        ;; net.wikipunk.obo.boot/SWO
-                        ;; net.wikipunk.obo.boot/SYMP
-                        ;; net.wikipunk.obo.boot/T4FS
-                        ;; net.wikipunk.obo.boot/TAXRANK
-                        ;; net.wikipunk.obo.boot/TO
-                        ;; net.wikipunk.obo.boot/TRANS
-                        ;; net.wikipunk.obo.boot/TTO
-                        ;; net.wikipunk.obo.boot/TXPO
-                        ;; net.wikipunk.obo.boot/UBERON
-                        ;; net.wikipunk.obo.boot/UO
-                        ;; net.wikipunk.obo.boot/UPHENO
-                        ;; net.wikipunk.obo.boot/VBO
-                        ;; net.wikipunk.obo.boot/VO
-                        ;; net.wikipunk.obo.boot/VT
-                        ;; net.wikipunk.obo.boot/VTO
-                        ;; net.wikipunk.obo.boot/WBPhenotype
-                        ;; net.wikipunk.obo.boot/WBbt
-                        ;; net.wikipunk.obo.boot/WBls
-                        ;; net.wikipunk.obo.boot/XAO
-                        ;; net.wikipunk.obo.boot/XCO
+                        net.wikipunk.obo.boot/OPL
+                        net.wikipunk.obo.boot/OPMI
+                        net.wikipunk.obo.boot/ORNASEQ
+                        net.wikipunk.obo.boot/OVAE
+                        net.wikipunk.obo.boot/OlatDv
+                        net.wikipunk.obo.boot/PATO
+                        net.wikipunk.obo.boot/PCL
+                        net.wikipunk.obo.boot/PCO
+                        net.wikipunk.obo.boot/PDRO
+                        net.wikipunk.obo.boot/PECO
+                        net.wikipunk.obo.boot/PHIPO
+                        net.wikipunk.obo.boot/PLANA
+                        net.wikipunk.obo.boot/PLANP
+                        net.wikipunk.obo.boot/PO
+                        net.wikipunk.obo.boot/PORO
+                        net.wikipunk.obo.boot/PPO
+                        net.wikipunk.obo.boot/PR
+                        net.wikipunk.obo.boot/PROCO
+                        net.wikipunk.obo.boot/PSDO
+                        net.wikipunk.obo.boot/PSO
+                        net.wikipunk.obo.boot/PW
+                        net.wikipunk.obo.boot/PdumDv
+                        net.wikipunk.obo.boot/RBO
+                        net.wikipunk.obo.boot/RO
+                        net.wikipunk.obo.boot/RS
+                        net.wikipunk.obo.boot/RXNO
+                        net.wikipunk.obo.boot/SBO
+                        net.wikipunk.obo.boot/SCDO
+                        net.wikipunk.obo.boot/SEPIO
+                        net.wikipunk.obo.boot/SO
+                        net.wikipunk.obo.boot/SPD
+                        net.wikipunk.obo.boot/STATO
+                        net.wikipunk.obo.boot/SWO
+                        net.wikipunk.obo.boot/SYMP
+                        net.wikipunk.obo.boot/T4FS
+                        net.wikipunk.obo.boot/TAXRANK
+                        net.wikipunk.obo.boot/TO
+                        net.wikipunk.obo.boot/TRANS
+                        net.wikipunk.obo.boot/TTO
+                        net.wikipunk.obo.boot/TXPO
+                        net.wikipunk.obo.boot/UBERON
+                        net.wikipunk.obo.boot/UO
+                        net.wikipunk.obo.boot/UPHENO
+                        net.wikipunk.obo.boot/VBO
+                        net.wikipunk.obo.boot/VO
+                        net.wikipunk.obo.boot/VT
+                        net.wikipunk.obo.boot/VTO
+                        net.wikipunk.obo.boot/WBPhenotype
+                        net.wikipunk.obo.boot/WBbt
+                        net.wikipunk.obo.boot/WBls
+                        net.wikipunk.obo.boot/XAO
+                        net.wikipunk.obo.boot/XCO
                         net.wikipunk.obo.boot/XLMOD ; Lexical form '5.0-20.0' is not a legal instance of Datatype[http://www.w3.org/2001/XMLSchema#float -> class java.lang.Float].
-                        ;; net.wikipunk.obo.boot/XPO
-                        ;; net.wikipunk.obo.boot/ZECO
-                        ;; net.wikipunk.obo.boot/ZFA
-                        ;; net.wikipunk.obo.boot/ZFS
-                        ;; net.wikipunk.obo.boot/ZP
-                        ]}}
+                        net.wikipunk.obo.boot/XPO
+                        net.wikipunk.obo.boot/ZECO
+                        net.wikipunk.obo.boot/ZFA
+                        net.wikipunk.obo.boot/ZFS
+                        net.wikipunk.obo.boot/ZP]}}

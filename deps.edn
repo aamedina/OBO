@@ -5,7 +5,7 @@
   {:git/sha "76d843150d18f1a6115d9a26baf99f5a3a80469a"}
   org.clojure/clojure
   {:mvn/version "1.11.1"}}
- :paths ["src" "classes"]
+ :paths ["src" "classes" "resources"]
  :aliases
  {:dev
   {:extra-deps

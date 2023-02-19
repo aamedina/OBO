@@ -23,12 +23,17 @@
    [com.stuartsierra.component.repl :refer [reset set-init start stop system]]
    [com.walmartlabs.schematic :as sc]
    [net.wikipunk.rdf :as rdf :refer [doc]]
+   [net.wikipunk.temple :as temple]
+   [net.wikipunk.mop :as mop :refer [isa? descendants parents ancestors]]
+   [net.wikipunk.mop.init]
    [net.wikipunk.obo :as obo]
    [net.wikipunk.obo.boot :as boot]
-   [zprint.core :as zprint]))
+   [zprint.core :as zprint])
+  (:refer-clojure :exclude [isa? descendants parents ancestors]))
 
 (set-init
   (fn [_]
+    #_(dorun (user/HsapDv))
     (if-let [r (io/resource "system.edn")]
       (-> (slurp r)
           (edn/read-string)
